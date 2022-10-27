@@ -1,0 +1,32 @@
+.wrapper {
+  width: 400px;
+  height: 650px;
+  border: 1px solid red;
+  border-radius: 20px;
+  .title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid red;
+    padding: 0 10px;
+  }
+
+  .lessons {
+    .lesson {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      border: 1px solid blue;
+      span {
+        width: 50px;
+        height: 50px;
+        border: 1px solid gray;
+        background-color: rgba(221, 221, 221, 0.479);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+}

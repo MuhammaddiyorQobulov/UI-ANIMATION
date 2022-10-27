@@ -1,0 +1,22 @@
+.lesson {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 15px;
+  h3 {
+    font-size: 20px;
+    line-height: 0px;
+  }
+  span {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color: rgba(221, 221, 221, 0.479);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  input {
+    margin-left: auto;
+  }
+}
