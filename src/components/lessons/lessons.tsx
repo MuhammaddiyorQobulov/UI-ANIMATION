@@ -19,10 +19,11 @@ const Lessons: React.FC<LessonsProps> = ({ lessons }) => {
         {lessons.map((item, idx) => (
           <div key={idx}>
             <div className={cls.lesson}>
-              <span>{item.avatar}</span>
+              <span>{idx + 1}</span>
               <div>
                 <h3 className={cls['lesson-title']}>{item.title}</h3>
               </div>
+              <input type="checkbox" name="" id="" />
             </div>
             <Lesson lesson={item.lesson} />
           </div>

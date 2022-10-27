@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images//main-bg.png");
+  padding: 3vw 7vw;
+  .anim-origin {
+    position: relative;
+    height: 100%;
+
+    .menus {
+      position: absolute;
+      content: "";
+      top: var(--top);
+      left: var(--left);
+      transform: rotateZ(var(--rotate) deg);
+      transform-origin: 0 0;
+      opacity: var(--opacity);
+      transition: 1s;
+    }
+  }
+  img {
+    height: 70px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #46506e;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+}

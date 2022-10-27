@@ -2,15 +2,18 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 0 15px;
+  padding: 5px 15px;
   h3 {
     font-size: 20px;
-    line-height: 0px;
+    color: #fff;
+  }
+  p {
+    color: #5e678c;
   }
   span {
-    width: 40px;
-    height: 40px;
-    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    color: #efed40;
     background-color: rgba(221, 221, 221, 0.479);
     border-radius: 50%;
     display: grid;

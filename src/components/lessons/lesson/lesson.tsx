@@ -3,7 +3,7 @@ import cls from './lesson.module.scss'
 
 export interface LessonProps {
   lesson: {
-    avatar: string
+    avatar: React.ReactNode
     title: string
     timeToLearn?: string
     isChecked?: boolean
@@ -17,7 +17,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
     <div className={cls.part}>
       {lesson.map(({ avatar, title, timeToLearn, isChecked }, idx) => (
         <div key={idx} className={cls.lesson}>
-          <span>{avatar}</span>
+          <span>{typeof avatar !== 'string' ? idx + 1 : avatar}</span>
           <div className={cls.title}>
             <h3>{title}</h3>
             <p>{timeToLearn}</p>

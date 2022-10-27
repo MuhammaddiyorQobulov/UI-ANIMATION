@@ -1,31 +1,56 @@
 .wrapper {
   width: 400px;
   height: 650px;
-  border: 1px solid red;
-  border-radius: 20px;
+  border: 1px solid hsl(225, 22%, 35%);
+  border-radius: 15px;
+  overflow: hidden;
+
   .title {
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid red;
-    padding: 0 10px;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid #46506e;
+    background-color: #46506e4f;
   }
-
+  
   .lessons {
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 91%;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: linear-gradient(to bottom, #fff, transparent);
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #333467;
+      border-radius: 5px;
+    }
+
     .lesson {
       display: flex;
       gap: 15px;
       justify-content: center;
       align-items: center;
-      padding: 0 10px;
-      border: 1px solid blue;
+      padding: 10px 15px 10px 10px;
+      color: #fff;
       span {
         width: 50px;
-        height: 50px;
+        height: 40px;
         border: 1px solid gray;
         background-color: rgba(221, 221, 221, 0.479);
         border-radius: 50%;
         display: grid;
         place-items: center;
+        font-weight: 800;
+        font-size: 18px;
       }
     }
   }
